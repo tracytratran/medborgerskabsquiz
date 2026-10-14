@@ -2,7 +2,7 @@
   "name": "medborgerskab-quiz-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tracytratran.github.io/aktiv-medborgerskab/",
+  "homepage": "https://tracytratran.github.io/medborgerskabsquiz/",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@types/node": "^16.18.46",

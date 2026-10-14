@@ -4,12 +4,18 @@ import Layout from "./components/Layout";
 import ReviewHistoryPage from "./pages/ReviewHistoryPage";
 import QuizSelectorPage from "./pages/QuizSelectorPage";
 
-export const BASE_PATH = "/aktiv-medborgerskab";
+export const BASE_PATH = process.env.PUBLIC_URL;
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="min-h-screen flex items-center justify-center">
+            Loading...
+          </div>
+        }
+      >
         <Layout>
           <Routes>
             <Route path={BASE_PATH}>
